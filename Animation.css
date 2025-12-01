@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*Animation eksempel*/
+div {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: movebox;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+}
+
+@keyframes movebox {
+    0% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+        background-color: aqua;
+    }
+    25% {
+        transform: translateX(300px) translateY(0px) rotate(90deg);
+        background-color: blueviolet;
+    }
+    50% {
+        transform: translateX(300px) translateY(300px) rotate(180deg);
+        background-color: cornsilk;
+    }
+    75% {
+        transform: translateX(0px) translateY(300px) rotate(270deg);
+        background-color: coral;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(360deg);
+        background-color: chartreuse;
+    }
+}
